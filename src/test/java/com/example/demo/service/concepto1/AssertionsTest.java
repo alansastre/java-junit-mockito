@@ -8,6 +8,12 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Las aserciones permiten realizar comprobaciones sobre el código a testear.
+ *
+ * Si se cumplen las aserciones entonces el test es correcto y se ejecuta con éxito resultando en color verde.
+ * Si no se cumplen las aserciones entonces el test es fallido y aparecerá en rojo
+ */
 public class AssertionsTest {
 
     @Test

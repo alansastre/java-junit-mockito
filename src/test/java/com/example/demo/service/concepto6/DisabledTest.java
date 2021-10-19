@@ -10,6 +10,14 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Deshabilitar casos de test temporalmente debido a:
+ * - nuevos desarrollos
+ * - corrección de bugs / fallos
+ * - ....
+ *
+ * Se utiliza @Disabled del test a deshabilitar
+ */
 public class DisabledTest {
 
     @Test

@@ -5,6 +5,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * El método assertAll() permite evaluar múltiples assert a la vez
+ * independientemente de que uno de ellos falle, no detiene la ejecución de los demás assert
+ */
 public class AssertAllTest {
 
     @Test
@@ -18,7 +22,7 @@ public class AssertAllTest {
         // Si falla una, las que están a continuación no se ejecutan
         assertNull(num); // este da error
         assertTrue(num > 0); // no se evalúa
-    assertEquals(5, num); // no se evalúa
+        assertEquals(5, num); // no se evalúa
 }
 
     @Test
@@ -35,7 +39,7 @@ public class AssertAllTest {
                 () -> assertNull(num), // este da error
                 () -> assertTrue(num > 0), // este sí se evalúa, no da error
                 () -> assertEquals(5, num), // este sí se evalúa, pero da error
-                () -> assertFalse(num < 0)
+                () -> assertFalse(num < 0) // este sí se evalúa
         );
 
     }

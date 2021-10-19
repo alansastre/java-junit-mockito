@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Ciclo de vida JUnit
  * @BeforeAll una vez por clase, antes de todos los tests.
- * @AfterEach una vez por clase, después de todos los tests.
+ * @AfterAll una vez por clase, después de todos los tests.
  */
 public class LifeCycleClassTest {
 

@@ -8,6 +8,14 @@ import org.junit.jupiter.api.condition.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Ejecución condicional de los casos de test en base a anotaciones:
+ * @EnabledOnOs - Habilitar test en base a Sistema Operativo (Os - Operating system)
+ * @EnabledOnJre - Habilitar test únicamente para una determinada versión del JDK JAVA
+ * @EnabledForJreRange - Habilitar test para un determinado rango de versiones JDK JAVA
+ * @EnabledIfEnvironmentVariable - Habilitar test en base a el valor de una determinada variable de entorno
+ * .....
+ */
 @DisplayName("Anotaciones para ejecución de tests de forma condicional, en base a condiciones")
 public class ConditionalTest {
 

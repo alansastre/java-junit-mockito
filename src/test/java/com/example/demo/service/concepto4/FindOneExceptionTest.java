@@ -7,6 +7,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Clase de tests para probar excepciones con aserciones.
+ *
+ * Se utiliza el método assertThrows
+ */
 class FindOneExceptionTest {
 
     @Test
