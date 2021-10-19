@@ -70,7 +70,10 @@ public class SmartPhoneServiceImpl implements SmartPhoneService{
         if (smartphone.getId() == null || smartphone.getId() == 0L) // nuevo smartphone
             smartphone.setId(getMaxSmartPhoneId() + 1); // genera id y lo asigna 
 
-        // en caso de actualizar primero lo eliminamos
+		if(smartphone.getId() < 0)
+			throw new IllegalArgumentException("Unexpected value: null");
+
+		// en caso de actualizar primero lo eliminamos
         smartphones.remove(smartphone.getId()); // en caso de que ya exista lo quita para actualizarlo
 
         // guarda el smartphone en el mapa
