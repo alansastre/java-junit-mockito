@@ -18,8 +18,8 @@ public class AssertAllTest {
         // Si falla una, las que están a continuación no se ejecutan
         assertNull(num); // este da error
         assertTrue(num > 0); // no se evalúa
-        assertEquals(5, num); // no se evalúa
-    }
+    assertEquals(5, num); // no se evalúa
+}
 
     @Test
     void countTest2(){

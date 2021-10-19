@@ -18,8 +18,10 @@ class FindOneExceptionTest {
 
         assertNotNull(phone1);
         assertEquals(1L, phone1.getId());
+        assertNotNull(phone1.getName());
     }
 
+    @DisplayName("Comprobar smartphone que no existe")
     @Test
     void findOnePhone999Test() {
 
@@ -36,6 +38,9 @@ class FindOneExceptionTest {
 
         SmartPhoneServiceImpl service = new SmartPhoneServiceImpl();
         // verifica si se ha lanzado una excepción
-        assertThrows(IllegalArgumentException.class, () -> service.findOne(null));
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> service.findOne(null)
+        );
     }
 }

@@ -63,7 +63,10 @@ public class SmartPhoneServiceImpl implements SmartPhoneService{
 
     @Override
     public SmartPhone save(SmartPhone smartphone) {
-    	// asignar un id
+		if(smartphone == null)
+			throw new IllegalArgumentException("Unexpected value: null");
+
+		// asignar un id
         if (smartphone.getId() == null || smartphone.getId() == 0L) // nuevo smartphone
             smartphone.setId(getMaxSmartPhoneId() + 1); // genera id y lo asigna 
 
