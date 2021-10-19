@@ -91,7 +91,7 @@ public class SmartPhoneServiceTest {
     }
     @DisplayName("Comprobar id negativo, no se debería añadir un smartphone")
     @Test
-    void saveNegativeId(){
+    void saveNegativeIdTest(){
         holaMundo();
         SmartPhoneServiceImpl service = new SmartPhoneServiceImpl();
 
@@ -119,21 +119,28 @@ public class SmartPhoneServiceTest {
     }
 
     @Test
-    void deleteNull(){
+    void deleteNullTest(){
         SmartPhoneServiceImpl service = new SmartPhoneServiceImpl();
         boolean result = service.delete(null);
         assertFalse(result);
     }
 
     @Test
-    void deleteNotContains(){
+    void deleteNotContainsTest(){
         SmartPhoneServiceImpl service = new SmartPhoneServiceImpl();
-        boolean result = service.delete(null);
+        boolean result = service.delete(666L);
         assertFalse(result);
     }
 
     @Test
-    void deleteAll(){
+    void deleteOkTest(){
+        SmartPhoneServiceImpl service = new SmartPhoneServiceImpl();
+        boolean result = service.delete(1L);
+        assertTrue(result);
+    }
+
+    @Test
+    void deleteAllTest(){
         SmartPhoneServiceImpl service = new SmartPhoneServiceImpl();
         assertTrue(service.count() > 0);
         service.deleteAll();

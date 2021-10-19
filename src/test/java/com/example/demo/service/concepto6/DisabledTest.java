@@ -3,6 +3,7 @@ package com.example.demo.service.concepto6;
 import com.example.demo.domain.SmartPhone;
 import com.example.demo.service.SmartPhoneServiceImpl;
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -25,6 +26,7 @@ public class DisabledTest {
 
     }
 
+    @DisplayName("Encontrar todos los smartphones")
     @Disabled("Deshabilitado por bug #1324")
     @Test
     void findAllTest(){
