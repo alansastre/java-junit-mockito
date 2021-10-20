@@ -1,4 +1,4 @@
-package com.example.demo.service.concepto8;
+package com.example.demo.junit.concepto8;
 
 import com.example.demo.domain.SmartPhone;
 import com.example.demo.domain.pieces.Battery;

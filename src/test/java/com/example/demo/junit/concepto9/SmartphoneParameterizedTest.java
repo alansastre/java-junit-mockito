@@ -1,4 +1,4 @@
-package com.example.demo.service.concepto9;
+package com.example.demo.junit.concepto9;
 
 import com.example.demo.domain.Employee;
 import com.example.demo.domain.SmartColor;

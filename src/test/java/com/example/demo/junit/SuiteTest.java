@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package com.example.demo.junit;
 
 
-import com.example.demo.service.concepto1.AssertionsTest;
+import com.example.demo.junit.concepto1.AssertionsTest;
 import org.junit.platform.suite.api.*;
 
 /**

@@ -1,4 +1,4 @@
-package com.example.demo.service.concepto9;
+package com.example.demo.junit.concepto9;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.RepeatedTest;

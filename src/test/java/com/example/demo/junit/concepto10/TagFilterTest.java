@@ -1,4 +1,4 @@
-package com.example.demo.service.concepto10;
+package com.example.demo.junit.concepto10;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -12,5 +12,10 @@ public class TagFilterTest {
 
     @Test
     void test2() {
+    }
+
+    @Tag("database")
+    @Test
+    void test3() {
     }
 }

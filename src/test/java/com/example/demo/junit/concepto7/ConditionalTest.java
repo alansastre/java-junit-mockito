@@ -1,7 +1,6 @@
-package com.example.demo.service.concepto7;
+package com.example.demo.junit.concepto7;
 
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.*;

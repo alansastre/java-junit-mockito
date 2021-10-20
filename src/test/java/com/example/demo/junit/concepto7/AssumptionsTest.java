@@ -1,4 +1,4 @@
-package com.example.demo.service.concepto7;
+package com.example.demo.junit.concepto7;
 
 
 import com.example.demo.service.SmartPhoneServiceImpl;

@@ -1,8 +1,10 @@
-package com.example.demo.service.concepto5;
+package com.example.demo.junit.concepto5;
 
 import com.example.demo.domain.SmartPhone;
 import com.example.demo.service.SmartPhoneServiceImpl;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
@@ -10,27 +12,28 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Ciclo de vida JUnit
- * @BeforeAll una vez por clase, antes de todos los tests.
- * @AfterAll una vez por clase, después de todos los tests.
+ * @BeforeEach antes de cada test
+ * @AfterEach después de cada test
  */
-public class LifeCycleClassTest {
+public class LifeCycleMethodTest {
 
-    SmartPhoneServiceImpl service = new SmartPhoneServiceImpl();
+    SmartPhoneServiceImpl service;
 
     /**
      * Se ejecuta antes de cada método de test
      */
-    @BeforeAll
-    static void beforeAll(){
-        System.out.println("beforeAll");
+    @BeforeEach
+    void setUp(){
+        System.out.println("setUp");
+        service = new SmartPhoneServiceImpl();
     }
 
     /**
      * Se ejecuta después de cada método de test
      */
-    @AfterAll
-    static void afterAll(){
-        System.out.println("afterAll");
+    @AfterEach
+    void tearDown(){
+        System.out.println("tearDown");
     }
 
     @Test

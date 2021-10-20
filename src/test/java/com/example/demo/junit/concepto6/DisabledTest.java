@@ -1,4 +1,4 @@
-package com.example.demo.service.concepto6;
+package com.example.demo.junit.concepto6;
 
 import com.example.demo.domain.SmartPhone;
 import com.example.demo.service.SmartPhoneServiceImpl;

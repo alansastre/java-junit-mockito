@@ -33,7 +33,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Optional<Employee> findOneOptional(Long id) {
 
         try{
-            return Optional.of(this.employeeRepository.findOne(id));
+            return Optional.ofNullable(this.employeeRepository.findOne(id));
         }catch(IllegalArgumentException e){
             e.printStackTrace();
         }
